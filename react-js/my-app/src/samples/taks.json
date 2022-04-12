@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "title": "Task 1",
+        "description": "To do excercise",
+        "done": false
+    },
+    {
+        "id": 1,
+        "title": "Task 2",
+        "description": "To play the guitar",
+        "done": false
+    },
+    {
+        "id": 2,
+        "title": "Task 3",
+        "description": "To do assignaments",
+        "done": false
+    },
+    {
+        "id": 3,
+        "title": "Task 4",
+        "description": "To call to my mom",
+        "done": false
+    },
+    {
+        "id": 4,
+        "title": "Task 5",
+        "description": "To play Lolsito uwu",
+        "done": false
+    }
+]

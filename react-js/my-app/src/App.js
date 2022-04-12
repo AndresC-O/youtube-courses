@@ -1,38 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
+import tasks from './samples/taks.json'
+import TaksItem from './components/TaskComponent';
 
-// function Helloworld(props){
-//   return(<div>Hello World, {props.mytext}</div>);
-// }
-
-class Helloworld extends React.Component{
+class App extends Component{
 
   state = {
-    show: true
+    task: tasks
   }
-
-  isLiked = 0;
 
   render(){
-    if(this.state.show){
-      return(
-        <div>Hello World, {this.props.mytext} <button onClick={()=>{alert("you has touched this button")}}>Toggle Show</button></div>
-      )
-    }
-    else{
-      return(
-        <div>There's nothing to show you!</div>
-      )
-    }
+    return <TaksItem task={this.state.task}></TaksItem>
   }
-}
-
-// const App = () => <div>This is my component: <Helloworld/> </div>;
-
-function App() {
-  return (
-    <div>This is my component: <Helloworld mytext="This is Andres!"/> <Helloworld/> <Helloworld/> </div>
-  );
 }
 
 export default App;
