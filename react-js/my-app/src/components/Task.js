@@ -19,6 +19,7 @@ class Taks extends Component{
         return <div style={this.styleCompleted()}>
             {task.title} - 
             {task.description} - 
+            {task.id} -
             {task.done}
             <input type='checkbox'></input><button className="closebtn">x</button>
         </div>
