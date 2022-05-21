@@ -4,7 +4,13 @@ import Taks from "./Task";
 
 class TaksItem extends Component{
     render(){
-        return this.props.task.map(task => <Taks task={task} key={task.id}></Taks>)
+        return this.props.task.map(task => 
+        <Taks 
+            task={task} 
+            key={task.id} 
+            deleteTask={this.props.deleteTask}
+            checkDone={this.props.checkDone}>
+        </Taks>)
     }
 }
 
